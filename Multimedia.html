@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimedia</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Darkbox/darkbox.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="estilos.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="PopupVideo/js/videopopup.js"></script>
+    <link rel="stylesheet" type="text/css" href="PopupVideo/css/videopopup.css" media="screen"/>
+</head>
+<body>
+<header>
+    <div class="contenedor">
+        <h1 class="icon-home"> Yo, Robot </h1>
+        <input id="menu-bar" type="checkbox"> <label class="icon-menu" for="menu-bar">Menu</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="Home.html">Inicio</a></li>
+                <li><a href="Datos.html">Datos</a></li>
+                <li><a href="Multimedia.html">Multimedia</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<p></p>
+<p></p>
+<p></p>
+<h1>Imagenes</h1><br>
+<p></p>
+<p></p>
+<p></p>
+<img src="imgs/Foto1.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto1.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto2.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto2.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto3.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto3.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto4.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto4.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto5.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto5.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto6.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto6.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto7.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto7.jpg"
+     data-darkbox-description="Image Caption" align="left">
+<img src="imgs/Foto8.jpg" data-darkbox-group="one" height="90" width="120" data-darkbox="imgs/Large/Foto8.jpg"
+     data-darkbox-description="Image Caption" align="left"><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<div class="rating" id="rating2">
+    <button class="btn btn-default like" style="font-size: 24px">Like</button>
+    <span class="likes" style="font-size: 24px">0</span>
+    <button class="btn btn-default dislike" style="font-size: 24px">Dislike</button>
+    <span class="dislikes" style="font-size: 24px">0</span>
+</div>
+
+<a id="video1" style="font-size: 48px">TRAILER</a>
+<br/>
+<div id="vidBox">
+    <div id="videCont">
+        <video id="v1" loop controls>
+            <source src="video/Trailer.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+<script type="text/javascript">
+            $(function () {
+               $('#vidBox').VideoPopUp({
+                  backgroundColor: "#17212a",
+                  opener: "video1",
+                    maxweight: "340",
+                    idvideo: "v1"
+                });
+            });
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+
+
+<script src="Darkbox/darkbox.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="Likebutton/js/like-dislike.js"></script>
+<script>
+ $('#rating').likeDislike({
+        reverseMode: false,
+        disabledClass: 'disable',
+        click: function (value, l, d, event) {
+            var likes = $(this.element).find('.likes');
+            var dislikes =  $(this.element).find('.dislikes');
+
+            likes.text(parseInt(likes.text()) + l);
+            dislikes.text(parseInt(dislikes.text()) + d);
+        }
+    });
+  $('#rating2').likeDislike({
+        reverseMode: true,
+        disabledClass: 'disable',
+        click: function (value, l, d, event) {
+            var likes = $(this.element).find('.likes');
+            var dislikes =  $(this.element).find('.dislikes');
+
+            likes.text(parseInt(likes.text()) + l);
+            dislikes.text(parseInt(dislikes.text()) + d);
+        }
+    });
+  $('#rating3').likeDislike({
+        readOnly: true,
+        disabledClass: 'disable'
+    });
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+</body>
+</html>

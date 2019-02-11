@@ -1,0 +1,178 @@
+
+
+*{ /* Estilo basico */
+	margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #aacdff;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background-color: rgba(28, 116, 216, 1);
+	color: #fff; 
+	position: fixed; /* Para que el menu se quede pegado arriba*/
+	top: 0px; /*Para que comience desde arriba*/
+	left: 0;
+	z-index: 1000; /*Para que este siempre por delante de los demás elementos*/
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+.contenedor{ /*Para que esté centrado*/
+	width: 100%;
+	margin: auto;
+	background-color: rgba(28, 116, 216, 1);
+}
+
+.icon-home{
+	background-color: rgba(28, 116, 216, 1);
+}
+
+.container{
+	width: 800px;
+	margin: 0 auto;
+	background-color: rgba(28, 116, 216, 1);
+}
+
+header .contenedor {
+    display: table; 
+    background-color: rgba(28, 116, 216, 1);
+}
+
+section{ /*A todas las secciones le damos: */
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+body{
+	text-align: left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:100%;
+	margin-top: 60px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+main{
+	background-color: #aacdff;
+}
+footer{
+	background-color: #aacdff;
+}
+p{
+	padding:0px 0 15px 0;
+	text-align:justify;
+	line-height:17px;
+	font-size:20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	color: #000000;
+	font-weight: bold; 
+}
+h1{
+	float:left;
+	color:#fff;
+	margin-left: 20px;
+	font-size:50px;
+	font-weight:normal;
+}
+h2{
+	color:#7e5025;
+	margin:0px;
+	font-size:40px;
+	font-weight:bold;
+}
+h3{
+	color:#2d7513;
+	padding:0px 0 5px 0;
+	margin:0px;
+	font-size:35px;
+	font-weight:bold;
+	margin-left: 10px;
+}
+h4{
+	color:#000000;
+	padding:0px 0 5px 0;
+	margin:0px;
+	font-size:30px;
+	font-weight:bold;
+	margin-left: 15px;
+}
+h5{
+	padding:0px 0 15px 0;
+	text-align:right;
+	line-height:17px;
+	font-size:10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #000000;
+	font-style: italic; 
+}
+ul{
+	padding:0px 0 5px 15px;
+	margin-left: 25px;
+}
+
+
+#menu-bar{
+	display: none;
+	background-color: rgba(28, 116, 216, 1);
+}
+
+header label{
+	float: right;
+	font-size: 40px;
+	margin-top: 6px;
+	margin-right: 26px;
+    cursor: pointer;
+	top:40px;
+	background-color: rgba(28, 116, 216, 1);
+}
+
+.menu{
+    position:absolute;
+	top: 60px; /*Para que empiece debajo del header*/
+	left: 0;
+	width: 100%;
+	height: 240px; /*Para que ocupe siempre el 100% del ancho de la ventana*/
+	background-color: #aacdff;
+    transition: all 0.4s;
+    transform: translateX(100%);
+}
+.menu a { 
+    display: block; 
+    color: #fff; 
+    height: 40px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255, 255, 0.6);
+    background-color: #aacdff;
+}
+.menu a:hover { 
+    background: rgba(92, 171, 70, 0.3); /*Para que cuando pase el mouse se ponga de color blanco*/
+}
+
+.menu li{
+	color: #fff;
+	display: block;
+	cursor: pointer;
+	background-color: #aacdff;
+	padding-left: 0;
+}
+
+#menu-bar:checked ~ .menu{ /*Para que cuando el checkbox esté seleccionado se abra el menu*/
+    transform: translateX(80%);
+   background-color: #aacdff;
+}
+
+.caja-datos {
+	width:22.7em;
+	line-height: 1.4em;
+	text-align:left;
+	padding:.23em;
+}
