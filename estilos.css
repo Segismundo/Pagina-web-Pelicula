@@ -114,8 +114,7 @@ h5{
 	font-style: italic; 
 }
 ul{
-	padding:0px 0 5px 15px;
-	margin-left: 25px;
+	margin-left: 0px;
 }
 
 
@@ -139,10 +138,9 @@ header label{
 	top: 60px; /*Para que empiece debajo del header*/
 	left: 0;
 	width: 100%; /*Para que ocupe siempre el 100% del ancho de la ventana*/
-	height: 240px; 
-	background-color: #aacdff;
     transition: all 0.4s;
     transform: translateX(100%);
+    font-size: x-large;
 }
 .menu a { 
     display: block; 
@@ -151,7 +149,7 @@ header label{
     text-decoration: none;
     padding: 15px;
     border-bottom: 1px solid rgba(255,255, 255, 0.6);
-    background-color: #aacdff;
+    background-color: rgba(20, 150, 200, 1);
 }
 .menu a:hover { 
     background: rgba(92, 171, 70, 0.3); /*Para que cuando pase el mouse se ponga de color blanco*/
@@ -162,7 +160,7 @@ header label{
 	display: block;
 	cursor: pointer;
 	background-color: #aacdff;
-	padding-left: 0;
+	margin-left: 0px;
 }
 
 #menu-bar:checked ~ .menu{ /*Para que cuando el checkbox esté seleccionado se abra el menu*/
@@ -175,4 +173,36 @@ header label{
 	line-height: 1.4em;
 	text-align:left;
 	padding:.23em;
+}
+
+.Persona{
+	font-size: 24px;
+	align-content: center;
+	margin-left: 30%;
+	display: none;
+}
+
+.Contenido{
+	width: 100%;
+}
+
+.Tabla{
+	width: 100%;
+	text-align: center;
+}
+
+.Grande{
+	font-size: 24px;
+}
+
+.Fotos_poster{
+	width: 484px;
+	height: 660px;
+}
+
+.cabecera{
+	text-align:center;
+	background-color:transparent;
+	color:black;
+	background-color:#ABD2D0;
 }
