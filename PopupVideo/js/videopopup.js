@@ -23,6 +23,11 @@
             video.currentTime = 0;
         }
         
+        $(document).ready(function(){
+            $('#' + settings.idvideo).on('ended',function(){
+                $('#' + patter + "").hide();
+            });
+        });
         $('#' + patter + '').css("display", "none");
         $('#' + patter + '').append('<div id="opct"></div>');
         $('#opct').css("background", settings.backgroundColor);

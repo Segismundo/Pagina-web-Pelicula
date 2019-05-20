@@ -60,7 +60,7 @@
 
       $darkbox.addClass("show spinner");
       $darkboxDescription.html(description);
-      $darkboxStats.html(n < 2 ? "" : (c+1) +"/"+ n);
+      //$darkboxStats.html(n < 2 ? "" : (c+1) +"/"+ n);
 
       $("<img/>").on("load", function() {
         var bigger = (this.width > docW || this.height > docH);

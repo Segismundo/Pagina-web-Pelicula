@@ -9,7 +9,7 @@ Darkbox
 /* #darkbox (shows large images as bg-image) */
 #darkbox{
   color:#fff;
-  font: 14px/1.4 sans-serif;
+  font: 40px/1.4 sans-serif;
   position: fixed;
   z-index: 999999;
   top: 24px; /* since we cannot use padding */

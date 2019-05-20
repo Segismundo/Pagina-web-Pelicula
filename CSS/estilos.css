@@ -53,11 +53,11 @@ body{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:100%;
 	margin-top: 60px;
-	margin-right: 20px;
-	margin-left: 20px;
+	background-color: #aacdff;
 }
 main{
 	background-color: #aacdff;
+	margin-top: 100px;
 }
 footer{
 	background-color: #aacdff;
@@ -84,6 +84,7 @@ h2{
 	margin:0px;
 	font-size:40px;
 	font-weight:bold;
+	text-align: center;
 }
 h3{
 	color:#2d7513;
@@ -115,6 +116,7 @@ h5{
 }
 ul{
 	margin-left: 0px;
+	margin-bottom: 10%;
 }
 
 
@@ -140,14 +142,17 @@ header label{
 	width: 100%; /*Para que ocupe siempre el 100% del ancho de la ventana*/
     transition: all 0.4s;
     transform: translateX(100%);
-    font-size: x-large;
+	font-size: x-large;
+	line-height: 0;
+    height: 0;
 }
 .menu a { 
     display: block; 
     color: #fff; 
     height: 40px;
     text-decoration: none;
-    padding: 15px;
+	padding: 15px;
+	padding-top: 20px;
     border-bottom: 1px solid rgba(255,255, 255, 0.6);
     background-color: rgba(20, 150, 200, 1);
 }
@@ -168,13 +173,6 @@ header label{
    background-color: #aacdff;
 }
 
-.caja-datos {
-	width:22.7em;
-	line-height: 1.4em;
-	text-align:left;
-	padding:.23em;
-}
-
 .Persona{
 	font-size: 24px;
 	align-content: center;
@@ -183,12 +181,16 @@ header label{
 }
 
 .Contenido{
+	border: 0;
 	width: 100%;
+	margin-left: 15px;
+	margin-right: 0;
 }
 
 .Tabla{
 	width: 100%;
 	text-align: center;
+	border: 0;
 }
 
 .Grande{
@@ -200,9 +202,6 @@ header label{
 	height: 660px;
 }
 
-.cabecera{
-	text-align:center;
-	background-color:transparent;
-	color:black;
-	background-color:#ABD2D0;
+a{
+	background-color: #aacdff;
 }

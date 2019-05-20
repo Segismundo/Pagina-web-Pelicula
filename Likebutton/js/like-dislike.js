@@ -108,7 +108,7 @@
                             self.btnUp(dislikeBtn);
                             d = -1;
                         }
-                        self.btnDown(likeBtn);
+                        //self.btnDown(likeBtn);
                         l = 1;
                         value = 1;
                     }
@@ -121,7 +121,7 @@
                             self.btnUp(likeBtn);
                             l = -1;
                         }
-                        self.btnDown(dislikeBtn);
+                        //self.btnDown(dislikeBtn);
                         d = 1;
                         value = -1;
                     }

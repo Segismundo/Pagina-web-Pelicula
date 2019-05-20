@@ -8,7 +8,7 @@
     display: table-cell;
     right: 2%;
     top: 2%;
-    font-size: 32px;
+    font-size: 60px;
     text-align: center;
     vertical-align: middle;
     padding: auto;
@@ -42,6 +42,7 @@
     max-width: 720px;
     height: 0;
     height: auto !important;
+    background-color: transparent;
 }
 video{
     position: absolute;
