@@ -6,48 +6,10 @@
     <title>Home</title>
     <link type="text/css" rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="CSS/estilos.css">
+    <link type="text/css" rel="stylesheet" href="CSS/Home.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-      $( function() {
-        var availableTags = [
-          "Will Smith",
-          "Bridget Moynahan",
-          "Alan Tudyk",
-          "James Cromwell",
-          "Bruce Greenwood",
-          "Adrian Ricard",
-          "Chi McBride",
-          "Jerry Wasserman",
-          "Shia LaBeouf",
-          "Fiona Hogan"
-        ];
-        $( "#actor" ).autocomplete({
-          source: availableTags
-        });
-      } );
-
-    </script>
-    <script>
-      $( function() {
-        var availableTags = [
-          "Del Spooner",
-          "Susan Calvin",
-          "Sonny",
-          "Lawrence Robertson",
-          "Alfred Lanning",
-          "John Bergin",
-          "Farber",
-          "VIKI",
-          "Gigi"
-        ];
-        $( "#personaje" ).autocomplete({
-          source: availableTags
-        });
-      } );
-
-    </script>
 </head>
 <body>
 <header>
@@ -107,35 +69,13 @@
                     <tr>
                         <td valign="top">
                             <h3>Buscar actor:</h3>
-                            <table class="Tabla">
-                                <tbody>
-                                <tr>
-                                    <td valign="top" align="right" id="search-input">
-                                        <input type="text" placeholder="Nombre actor..." id="actor" class="Grande">
-                                    </td>
-                                    <td valign="top" align="left" id="search-button">
-                                        <button type="submit" id="BuscarActor" class="Grande">Buscar
-                                        </button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <input type="text" placeholder="Nombre actor..." id="actor" class="Grande">
+                            <button type="button" id="BuscarActor" class="Grande" onclick="BuscarActor()">Buscar</button>
                         </td>
                         <td valign="top">
                             <h3>Buscar personaje:</h3>
-                            <table class="Tabla">
-                                <tbody>
-                                <tr>
-                                    <td valign="top" align="right" id="search-input">
-                                        <input type="text" placeholder="Nombre personaje..." id="personaje" class="Grande">
-                                    </td>
-                                    <td valign="top" align="left" id="search-button">
-                                        <button type="submit" id="BuscarPersonaje" class="Grande">Buscar
-                                        </button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <input type="text" placeholder="Nombre personaje..." id="personaje" class="Grande">
+                            <button type="submit" id="BuscarPersonaje" class="Grande" onclick="BuscarPersonaje()">Buscar</button>
                         </td>
                     </tr>
                     </tbody>
@@ -144,377 +84,161 @@
         </tr>
         </tbody>
     </table>
-    <div id="Will_Smith" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/WillSmith.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Will Smith<br>
-                    Nombre del personaje: Del Spooner
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Bridget" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Bridget.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Bridget Moynahan<br>
-                    Nombre del personaje: Susan Calvin
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Alan" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Alan_Tudyk.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Alan Tudyk<br>
-                    Nombre del personaje: Sonny (Voz y captura de movimiento)
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="James" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/James.jpg">
-                </th>
-                <th>
-                    Nombre del actor: James Cromwell<br>
-                    Nombre del personaje: Doctor Alfred Lanning
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Bruce" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Bruce.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Bruce Greenwood<br>
-                    Nombre del personaje: Lawrence Robertson
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Adrian" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/adrian.gif">
-                </th>
-                <th>
-                    Nombre del actor: Adrian Ricard<br>
-                    Nombre del personaje: Gigi
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Chi" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Chi.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Kenneth "Chi" McBride<br>
-                    Nombre del personaje: Teniente John Bergin
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Shia" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Shia.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Shia Saide LaBeouf<br>
-                    Nombre del personaje: Farber
-                </th>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="Fiona" class="Persona">
-        <table>
-            <tbody>
-            <tr>
-                <th>
-                    <img src="imgs/Fiona.jpg">
-                </th>
-                <th>
-                    Nombre del actor: Fiona Hogan<br>
-                    Nombre del personaje: V.I.K.I.
-                </th>
-            </tr>
-            </tbody>
-        </table>
+    <div id="Personas">
+        <div id="Will_Smith" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/WillSmith.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Will Smith<br>
+                        Nombre del personaje: Del Spooner
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Bridget" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Bridget.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Bridget Moynahan<br>
+                        Nombre del personaje: Susan Calvin
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Alan" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Alan_Tudyk.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Alan Tudyk<br>
+                        Nombre del personaje: Sonny (Voz y captura de movimiento)
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="James" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/James.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: James Cromwell<br>
+                        Nombre del personaje: Doctor Alfred Lanning
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Bruce" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Bruce.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Bruce Greenwood<br>
+                        Nombre del personaje: Lawrence Robertson
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Adrian" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/adrian.gif">
+                    </th>
+                    <th>
+                        Nombre del actor: Adrian Ricard<br>
+                        Nombre del personaje: Gigi
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Chi" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Chi.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Kenneth "Chi" McBride<br>
+                        Nombre del personaje: Teniente John Bergin
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Shia" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Shia.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Shia Saide LaBeouf<br>
+                        Nombre del personaje: Farber
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Fiona" class="Persona">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Fiona.jpg">
+                    </th>
+                    <th>
+                        Nombre del actor: Fiona Hogan<br>
+                        Nombre del personaje: V.I.K.I.
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="Error" class="Error">
+            <table>
+                <tbody>
+                <tr>
+                    <th>
+                        <img src="imgs/Error.png">
+                    </th>
+                    <th>
+                        Actor o personaje no encontrado,pulse el<br>
+                        siguiente boton para ver la lista entera.<br>
+                        <button type="button" id="Lista" class="Grande" onclick="Lista()">Lista</button>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" id="Reset" class="Full" onclick="Lista()">Lista</button>
     </div>
 </main>
-<script>
-		document.getElementById("actor").addEventListener("keyup", function(event) {
-		  event.preventDefault();
-		  if (event.keyCode === 13) {
-		    document.getElementById("BuscarActor").click();
-		  }
-		});
-		var input = document.getElementById("personaje");
-		input.addEventListener("keyup", function(event) {
-		  event.preventDefault();
-		  if (event.keyCode === 13) {
-		    document.getElementById("BuscarPersonaje").click();
-		  }
-		});
-
-</script>
-<script type="text/javascript">
-    	$(document).ready(function(){ 
-   			$('#BuscarActor').on('click',function(){
-	    		switch(document.getElementById("actor").value) {
-					  case "Will Smith":
-					   	document.getElementById("Will_Smith").style.display="block";
-					   	document.getElementById("Bridget").style.display="none";
-					   	document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Bridget Moynahan":
-					  	document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="block";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Alan Tudyk":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="block";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "James Cromwell":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="block";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Bruce Greenwood":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="block";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Adrian Ricard":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="block";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Chi McBride":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="block";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Shia LaBeouf":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="block";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-					  case "Fiona Hogan":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="Fiona";
-					    break;
-					  default:
-					    
-					} 
-    			});
-		});
-
-</script>
-<script type="text/javascript">
-    	$(document).ready(function(){ 
-   			$('#BuscarPersonaje').on('click',function(){
-   				switch(document.getElementById("personaje").value) {
-				  	case "Del Spooner":
-					   	document.getElementById("Will_Smith").style.display="block";
-					   	document.getElementById("Bridget").style.display="none";
-					   	document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "Susan Calvin":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="block";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "Sonny":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="block";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "Lawrence Robertson":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="block";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "Alfred Lanning":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="block";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "John Bergin":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="block";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "Farber":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="block";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	case "VIKI":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="none";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="Fiona";
-					    break;
-				  	case "Gigi":
-					    document.getElementById("Will_Smith").style.display="none";
-					    document.getElementById("Bridget").style.display="none";
-					    document.getElementById("Alan").style.display="none";
-					    document.getElementById("James").style.display="none";
-					    document.getElementById("Bruce").style.display="none";
-					    document.getElementById("Adrian").style.display="block";
-					    document.getElementById("Chi").style.display="none";
-					    document.getElementById("Shia").style.display="none";
-					    document.getElementById("Fiona").style.display="none";
-					    break;
-				  	default:
-				    	
-				} 
-   			});
-		});
-
-</script>
+<script src="Javascripts/Home.js"></script>
 </body>
 </html>

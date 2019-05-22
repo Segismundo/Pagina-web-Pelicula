@@ -173,33 +173,9 @@ header label{
    background-color: #aacdff;
 }
 
-.Persona{
-	font-size: 24px;
-	align-content: center;
-	margin-left: 30%;
-	display: none;
-}
-
 .Contenido{
 	border: 0;
 	width: 100%;
-	margin-left: 15px;
-	margin-right: 0;
-}
-
-.Tabla{
-	width: 100%;
-	text-align: center;
-	border: 0;
-}
-
-.Grande{
-	font-size: 24px;
-}
-
-.Fotos_poster{
-	width: 484px;
-	height: 660px;
 }
 
 a{
