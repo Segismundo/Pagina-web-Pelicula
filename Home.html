@@ -26,200 +26,124 @@
     </div>
 </header>
 <main>
-    <table class="Contenido">
-        <tbody>
-        <tr>
-            <td>
-                <img src="imgs/Poster1.jpg" class="Fotos_poster">
-            </td>
-            <td>
-                <div class="Datos_Peliculas">
-                    <h2>Sinopsis</h2>
-                    <p></p>
-                    <p>La acción está ambientada en un futuro relativamente cercano,
-                        el año 2035, en la ciudad de Chicago, en el cual los robots
-                        forman parte de la vida cotidiana en la Tierra y son la
-                        principal fuerza laboral de la especie humana, trabajando con
-                        seguridad gracias a las tres leyes de la robótica. La compañía
-                        dedicada al diseño, construcción y venta de robots es U.S.
-                        Robots and Mechanical Men. La empresa tiene previsto el
-                        lanzamiento de un nuevo modelo de robot: los Ns-5. No
-                        obstante, el detective Spooner (Will Smith) es un hombre que
-                        odia a los robots, ya que él cree que no cumplen debidamente
-                        con el propósito que ellos deben realizar. Además, es un
-                        amante del pasado, usando aún una motocicleta a gasolina, unas
-                        zapatillas deportivas de principios del siglo XXI y un equipo
-                        de música muy antiguo (para la época en la que está).</p>
-                    <p>Pocos días antes del lanzamiento de la nueva serie de robots,
-                        el detective Spooner recibe la noticia del presunto suicidio
-                        del Dr. Alfred J. Lanning (James Cromwell), ingeniero
-                        diseñador de robots y co-fundador de la compañía, creador del
-                        modelo NS-5 y amigo de Spooner. Lanning murió después de caer
-                        al vacío por la ventana de su oficina, pero el detective se da
-                        cuenta de que un hombre de su edad no habría podido romper las
-                        ventanas fortificadas. El doctor, que trabajaba en la sede de
-                        USR, le deja un mensaje a Spooner a través de un holograma.
-                        Esto hace sospechar al detective y deduce que Lanning fue
-                        asesinado. Así, entrará en contacto con Susan Calvin,
-                        robopsicóloga de la empresa, para que le informe acerca del
-                        comportamiento de los robots.</p>
-                </div>
-                <table class="Tabla">
-                    <tbody>
-                    <tr>
-                        <td valign="top">
-                            <h3>Buscar actor:</h3>
-                            <input type="text" placeholder="Nombre actor..." id="actor" class="Grande">
-                            <button type="button" id="BuscarActor"  class="btn btn-primary" onclick="BuscarActor()">Buscar</button>
-                        </td>
-                        <td valign="top">
-                            <h3>Buscar personaje:</h3>
-                            <input type="text" placeholder="Nombre personaje..." id="personaje" class="Grande">
-                            <button type="submit" id="BuscarPersonaje" onclick="BuscarPersonaje()">Buscar</button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <div id="Personas">
-        <div id="Will_Smith" class="Persona">
-            <div class="imagen" style='background: url("imgs/WillSmith.jpg") no-repeat center;'>
+    <div class="Portada">
+        <div class="Poster" style='background: url("imgs/Poster1.jpg") no-repeat center;'></div>
+        <div class="Informacion">
+            <div class="Sinopsis">
+                <h2>Sinopsis</h2>
+                <p>La acción está ambientada en un futuro relativamente cercano,
+                el año 2035, en la ciudad de Chicago, en el cual los robots
+                forman parte de la vida cotidiana en la Tierra y son la
+                principal fuerza laboral de la especie humana, trabajando con
+                seguridad gracias a las tres leyes de la robótica. La compañía
+                dedicada al diseño, construcción y venta de robots es U.S.
+                Robots and Mechanical Men. La empresa tiene previsto el
+                lanzamiento de un nuevo modelo de robot: los Ns-5. No
+                obstante, el detective Spooner (Will Smith) es un hombre que
+                odia a los robots, ya que él cree que no cumplen debidamente
+                con el propósito que ellos deben realizar. Además, es un
+                amante del pasado, usando aún una motocicleta a gasolina, unas
+                zapatillas deportivas de principios del siglo XXI y un equipo
+                de música muy antiguo (para la época en la que está).</p>
+                <p>Pocos días antes del lanzamiento de la nueva serie de robots,
+                el detective Spooner recibe la noticia del presunto suicidio
+                del Dr. Alfred J. Lanning (James Cromwell), ingeniero
+                diseñador de robots y co-fundador de la compañía, creador del
+                modelo NS-5 y amigo de Spooner. Lanning murió después de caer
+                al vacío por la ventana de su oficina, pero el detective se da
+                cuenta de que un hombre de su edad no habría podido romper las
+                ventanas fortificadas. El doctor, que trabajaba en la sede de
+                USR, le deja un mensaje a Spooner a través de un holograma.
+                Esto hace sospechar al detective y deduce que Lanning fue
+                asesinado. Así, entrará en contacto con Susan Calvin,
+                robopsicóloga de la empresa, para que le informe acerca del
+                comportamiento de los robots.</p>
             </div>
+            <div class="Buscadores">
+                <div class="Actor">
+                    <h3>Buscar actor:</h3>
+                    <input type="text" placeholder="Nombre actor..." id="actor" class="Grande">
+                    <button type="button" id="BuscarActor"  class="Grande" onclick="BuscarActor()">Buscar</button>
+                </div>
+                <div class="Personaje">
+                    <h3>Buscar personaje:</h3>
+                    <input type="text" placeholder="Nombre personaje..." id="personaje" class="Grande">
+                    <button type="submit" id="BuscarPersonaje" class="Grande" onclick="BuscarPersonaje()">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Personas">
+        <div id="Will_Smith" class="Persona">
+            <div class="imagen" style='background: url("imgs/WillSmith.jpg") no-repeat center;'></div>
             <div class="datos">
                     Nombre del actor: Will Smith<br>
                     Nombre del personaje: Del Spooner
             </div>
         </div>
         <div id="Bridget" class="Persona">
-                <div class="imagen" style='background: url("imgs/Bridget.jpg") no-repeat center;'></div>
-                    <div class="datos">
-                            Nombre del actor: Bridget Moynahan<br>
-                            Nombre del personaje: Susan Calvin
-                        </div>
+            <div class="imagen" style='background: url("imgs/Bridget.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre de la actriz: Bridget Moynahan<br>
+                Nombre del personaje: Susan Calvin
+            </div>
         </div>
         <div id="Alan" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Alan_Tudyk.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Alan Tudyk<br>
-                        Nombre del personaje: Sonny (Voz y captura de movimiento)
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Alan_Tudyk.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre del actor: Alan Tudyk<br>
+                Nombre del personaje: Sonny (Voz y captura de movimiento)
+            </div>
         </div>
         <div id="James" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/James.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: James Cromwell<br>
-                        Nombre del personaje: Doctor Alfred Lanning
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/James.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre del actor: James Cromwell<br>
+                Nombre del personaje: Doctor Alfred Lanning
+            </div>
         </div>
         <div id="Bruce" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Bruce.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Bruce Greenwood<br>
-                        Nombre del personaje: Lawrence Robertson
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Bruce.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre del actor: Bruce Greenwood<br>
+                Nombre del personaje: Lawrence Robertson
+            </div>
         </div>
         <div id="Adrian" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/adrian.gif">
-                    </th>
-                    <th>
-                        Nombre del actor: Adrian Ricard<br>
-                        Nombre del personaje: Gigi
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/adrian.gif") no-repeat center;'></div>
+            <div class="datos">
+                Nombre de la actriz: Adrian Ricard<br>
+                Nombre del personaje: Gigi
+            </div>
         </div>
         <div id="Chi" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Chi.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Kenneth "Chi" McBride<br>
-                        Nombre del personaje: Teniente John Bergin
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Chi.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre del actor: Kenneth "Chi" McBride<br>
+                Nombre del personaje: Teniente John Bergin
+            </div>
         </div>
         <div id="Shia" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Shia.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Shia Saide LaBeouf<br>
-                        Nombre del personaje: Farber
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Shia.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre del actor: Shia Saide LaBeouf<br>
+                Nombre del personaje: Farber
+            </div>
         </div>
         <div id="Fiona" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Fiona.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Fiona Hogan<br>
-                        Nombre del personaje: V.I.K.I.
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Fiona.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Nombre de la actriz: Fiona Hogan<br>
+                Nombre del personaje: V.I.K.I.
+            </div>
         </div>
         <div id="Error" class="Error">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Error.png">
-                    </th>
-                    <th>
-                        Actor o personaje no encontrado,pulse el<br>
-                        siguiente boton para ver la lista entera.<br>
-                        <button type="button" id="Lista" class="Grande" onclick="Lista()">Lista</button>
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/Error.jpg") no-repeat center;'></div>
+            <div class="datos">
+                Actor o personaje no encontrado,pulse el<br>
+                siguiente boton para ver la lista entera.<br>
+                <button type="button" id="Lista" class="Grande" onclick="Lista()">Lista</button>
+            </div>
         </div>
         <button type="button" id="Reset" class="Full" onclick="Lista()">Lista</button>
     </div>

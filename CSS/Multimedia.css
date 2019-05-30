@@ -4,25 +4,22 @@
 	background-color:rgb(117, 233, 107);
 }
 
-.caja-datos {
-	text-align:left;
-	padding:.23em;
-	border: 0;
-}
-
 #titulo{
     background-color:transparent;
-    margin-left: 50%;
-    margin-right: 50%;
 }
 
 .rating{
-    margin-left: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .trailer{
-    margin-left: 50%;
     font-size: 50px;
+    text-align: center;
+}
+
+.trailer a:hover{
+    background-color: #93b8eb;
 }
 
 .rating span{
@@ -38,6 +35,12 @@ main{
 }
 
 .imagenes{
-	margin-left: 15px;
-	margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Multimedia{
+    display: flex;
+    flex-direction: column;
 }
