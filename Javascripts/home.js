@@ -13,9 +13,8 @@ $( function() {
     $( "#actor" ).autocomplete({
         source: availableTags
     });
-} );
-$( function() {
-    var availableTags = [
+
+    var availableTags2 = [
       "Del Spooner",
       "Susan Calvin",
       "Sonny",
@@ -27,10 +26,9 @@ $( function() {
       "Gigi"
     ];
     $( "#personaje" ).autocomplete({
-      source: availableTags
+      source: availableTags2
     });
-});
-$( function() {
+
     $("#actor").keyup( function(event) {
         event.preventDefault();
         if (event.keyCode === 13) {

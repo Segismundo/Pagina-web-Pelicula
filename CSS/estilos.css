@@ -1,6 +1,6 @@
 
 
-*{ /* Estilo basico */
+/**{ /* Estilo basico 
 	margin: 0px;
 	padding: 0;
 	box-sizing: border-box;
@@ -8,6 +8,7 @@
 	margin-right: 0px;
 	background-color: #aacdff;
 }
+*/
 
 header{
 	width: 100%;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,12 +70,12 @@
                         <td valign="top">
                             <h3>Buscar actor:</h3>
                             <input type="text" placeholder="Nombre actor..." id="actor" class="Grande">
-                            <button type="button" id="BuscarActor" class="Grande" onclick="BuscarActor()">Buscar</button>
+                            <button type="button" id="BuscarActor"  class="btn btn-primary" onclick="BuscarActor()">Buscar</button>
                         </td>
                         <td valign="top">
                             <h3>Buscar personaje:</h3>
                             <input type="text" placeholder="Nombre personaje..." id="personaje" class="Grande">
-                            <button type="submit" id="BuscarPersonaje" class="Grande" onclick="BuscarPersonaje()">Buscar</button>
+                            <button type="submit" id="BuscarPersonaje" onclick="BuscarPersonaje()">Buscar</button>
                         </td>
                     </tr>
                     </tbody>
@@ -86,34 +86,19 @@
     </table>
     <div id="Personas">
         <div id="Will_Smith" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/WillSmith.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Will Smith<br>
-                        Nombre del personaje: Del Spooner
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+            <div class="imagen" style='background: url("imgs/WillSmith.jpg") no-repeat center;'>
+            </div>
+            <div class="datos">
+                    Nombre del actor: Will Smith<br>
+                    Nombre del personaje: Del Spooner
+            </div>
         </div>
         <div id="Bridget" class="Persona">
-            <table>
-                <tbody>
-                <tr>
-                    <th>
-                        <img src="imgs/Bridget.jpg">
-                    </th>
-                    <th>
-                        Nombre del actor: Bridget Moynahan<br>
-                        Nombre del personaje: Susan Calvin
-                    </th>
-                </tr>
-                </tbody>
-            </table>
+                <div class="imagen" style='background: url("imgs/Bridget.jpg") no-repeat center;'></div>
+                    <div class="datos">
+                            Nombre del actor: Bridget Moynahan<br>
+                            Nombre del personaje: Susan Calvin
+                        </div>
         </div>
         <div id="Alan" class="Persona">
             <table>
